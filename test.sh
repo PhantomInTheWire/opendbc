@@ -6,6 +6,10 @@ cd $DIR
 
 source ./setup.sh
 
+pytest --cache-clear --collect-only opendbc
+pytest --cache-clear --collect-only opendbc
+pytest --cache-clear --collect-only opendbc
+
 # *** build ***
 scons -j8
 
