@@ -6,6 +6,10 @@ cd $DIR
 
 source ./setup.sh
 
+pytest --cache-clear --collect-only opendbc/car/tests/
+pytest --cache-clear --collect-only opendbc/car/tests/
+pytest --cache-clear --collect-only opendbc/car/tests/
+
 # *** build ***
 scons -j8
 
